@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Roots - A Farm to Table Marketplace</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="navbar">
+  <div class="nav-container">
+    <div class="logo">🌱 Local Roots</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#">Home</a>
+      <a href="#community">About Us</a>
+      <a href="#market">Shop</a>
+      <a href="#vendors">Vendors</a>
+      <a href="#newsletter">Newsletter</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      &#9776;
+    </div>
+  </div>
+</header>
     <section class="hero">
         <div class="hero-content">
             <h1>From Soil to Supper - Freshly Delivered.</h1>
@@ -15,7 +32,7 @@
             <a href="#market" class="cta-button">Browse the Market</a>
         </div>
     </section>
-    <section class="community">
+    <section class="community" id="community">
   <div class="community-container">
     <div class="community-image">
       <img src="images/farmer_smile.jpg" alt="Happy farmer holding greens">
@@ -29,5 +46,146 @@
     </div>
   </div>
 </section>
+<section class="products" id="market">
+  <h2>Featured Products</h2>
+  <div class="product-grid">
+    
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="images/raw_honey.jpg" alt="Raw Clover Honey">
+      <h3>Raw Clover Honey</h3>
+      <p>Golden, unfiltered honey straight from local hives.</p>
+      <div class="product-info">
+        <span class="price">$8</span>
+        <button class="add-button">Add to Basket</button>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="images/sourdough.jpg" alt="Sourdough Loaf">
+      <h3>Sourdough Loaf</h3>
+      <p>Fresh-baked daily with wild yeast and love.</p>
+      <div class="product-info">
+        <span class="price">$5</span>
+        <button class="add-button">Add to Basket</button>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="images/tomatoes.jpg" alt="Heirloom Tomatoes">
+      <h3>Heirloom Tomatoes (1lb)</h3>
+      <p>Juicy, colorful, and bursting with flavor.</p>
+      <div class="product-info">
+        <span class="price">$4</span>
+        <button class="add-button">Add to Basket</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="vendors" id="vendors">
+  <h2>Meet the vendors</h2>
+
+  <div class="vendor">
+    <div class="vendor-photo">
+      <img src="images/jane_willow_farms.jpg" alt="Jane from Willow Farms">
+    </div>
+    <div class="vendor-info">
+      <h3>Jane from Willow Farms</h3>
+      <p>“We grow with organic love in every tomato...”</p>
+    </div>
+  </div>
+
+  <!-- Optional Second Vendor -->
+  <div class="vendor">
+    <div class="vendor-photo">
+      <img src="images/mike_oak_valley.jpg" alt="Mike from Oak Valley Orchards">
+    </div>
+    <div class="vendor-info">
+      <h3>Mike from Oak Valley Orchards</h3>
+      <p>“Our apples are hand-picked and heart-grown.”</p>
+    </div>
+  </div>
+
+  <div class="vendor">
+    <div class="vendor-photo">
+      <img src="images/william_smith_sons.jpg" alt="William from Smith Sons">
+    </div>
+    <div class="vendor-info">
+      <h3>William from Smith Sons Farms</h3>
+      <p>“Candied or fresh either way our carrots rock.”</p>
+    </div>
+  </div>
+
+  <!-- Optional third Vendor -->
+  <div class="vendor">
+    <div class="vendor-photo">
+      <img src="images/able_windcrest_acres.jpg" alt="Able from Windcrest Acres">
+    </div>
+    <div class="vendor-info">
+      <h3>Able from Windcrest Acres</h3>
+      <p>“Either as food or feed everyone loves corn.”</p>
+    </div>
+  </div>
+
+</section>
+<section class="newsletter" id="newsletter">
+  <div class="newsletter-content">
+    <h2>Stay in the Loop</h2>
+    <p>Weekly recipes, seasonal tips, and local stories – right to your inbox.</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="contact-box">
+    <h2>Let’s Connect</h2>
+    <p></p><a href="mailto:hello@localroots.market"><i class="fas fa-envelope"></i>  hello@localroots.market</a></p>
+    <p><a href="tel:5551234567"><i class="fas fa-phone-alt"></i> (555) 123-4567</a></p>
+    <div class="social-links">
+      <p>Socials:</p>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="#" target="_blank"><i class="fab fa-pinterest-p"></i> Pinterest</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Optional Logo/Icon -->
+    <div class="footer-logo">
+      <!-- You can replace this with an image tag -->
+      <span>🌱 Local Roots</span>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#market">Shop</a>
+      <a href="#vendors">Vendors</a>
+      <a href="#newsletter">Newsletter</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-copy">
+      <p>&copy; 2025 Local Roots. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
 </body>
 </html>
