@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    background-image: url("../images/farmers_table.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Optional: Add a dark overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+/* Headline */
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+/* Subtext */
+.hero h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+/* Call to Action Button */
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 999px;
+    font-family: 'Lato', sans-serif;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #facc15;
+    color: #000000;
+}
+
+/* Community Section */
+.community {
+    background-color: #FFFFF0; /* Ivory white */
+    padding: 2rem 1rem;
+    color: #333333;            /* Charcoal */
+}
+
+.community-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.community-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.community-image {
+    flex: 1 1 45%;
+    min-width: 280px;
+}
+
+.community-text {
+    flex: 1 1 45%;
+    min-width: 280px;
+    font-family: 'Lato', sans-serif;
+}
+
+.community-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+.community-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
